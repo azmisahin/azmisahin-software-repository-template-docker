@@ -1,7 +1,7 @@
 # Introduction 
 General repository standardization template for docker project types. Compatible for agile processes.
 
-🔖: releasing / version tags
+🔖: releasing / 0.1.0
 
 # Getting Started
 TO DO: Things to do when getting started on this project.
