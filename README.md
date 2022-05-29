@@ -1,6 +1,7 @@
 # Introduction 
-com-azmisahin-software-document-service-architecture-ddd-markdown-v1
-[domain-organization-group-type-project-name-product-language-version] Entry-level workspace for azmisahin.
+General repository standardization template for docker project types. Compatible for agile processes.
+
+🔖: releasing / 0.1.0
 
 # Getting Started
 TO DO: Things to do when getting started on this project.
