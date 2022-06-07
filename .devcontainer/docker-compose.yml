@@ -7,7 +7,7 @@
 #  *
 #  * @copyright Copyright (c) 2022
 #  */
-version: '3.8'
+version: "3.8"
 services:
   application:
     build:
@@ -19,20 +19,20 @@ services:
         # Use -bullseye variants on local arm64/Apple Silicon.
         VARIANT: 16-bullseye
         # build
-        NAME: ${NAME}
+        APP_NAME: ${APP_NAME}
         WORK_DIR: ${WORK_DIR}
         BUILD_DIR: ${BUILD_DIR}
         DIST_DIR: ${DIST_DIR}
         # application
       labels:
-        com.azmisahin.description: ${NAME}
+        com.azmisahin.description: ${APP_NAME}
         com.azmisahin.department: "DEVOPS"
       # stage
-      target: ${ENV}
-    container_name: ${NAME}-${ENV}-${CONTAINER}
+      target: ${APP_ENV}
+    container_name: ${APP_NAME}-${APP_ENV}-${CONTAINER}
     environment:
       # build
-      NAME: ${NAME}
+      APP_NAME: ${APP_NAME}
       WORK_DIR: ${WORK_DIR}
       BUILD_DIR: ${BUILD_DIR}
       DIST_DIR: ${DIST_DIR}
